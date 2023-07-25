@@ -1,0 +1,268 @@
+$fontSizeGrande:150px;
+$fontsizeMediana:50px;
+$anchomax:105%;
+$anchomin:50;
+$h-1:50px;
+$h-2:37px;
+$h-3:37px;
+$h-4:30px;
+$naranja:rgba(201, 105, 9, 0.993);
+$negro: rgba(0, 0, 0, 0.786);
+$blanco: rgb(255, 255, 255);
+
+@import "reset";
+
+header {
+    background-image: url(../media/Living4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 25%;
+    font-size: 25px;
+
+    h1 {
+        color: rgb(227,94,4);
+        font-size: $fontsizeMediana;
+        font-family: fantasy;
+        text-align: center;
+        letter-spacing: 2pt;
+        margin: 13px;
+    }
+
+}
+
+nav.navbar {
+    background-color: $negro;
+    position: sticky;
+    top: 0;
+div {
+   width: 100px; height: 100px;
+   transition: all 2s;       
+}
+div:hover {
+   height: 200px; width: 200px;
+   padding: 20px;
+   background-color: cyan;
+}
+
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    ul li {
+        color: rgb(41, 33, 33);
+        text-decoration-line: none;
+        display: inline-block;
+        padding: 20px;
+        height: 1%;
+        margin: 5px;
+        border-radius: 15%;
+        list-style: none;
+        background: rgb(227,94,4);
+        background: linear-gradient(90deg, rgba(227,94,4,1) 28%, rgba(239,89,0,1) 78%);        justify-content: space-evenly
+    }
+
+    ul li a {
+        color: $blanco;
+        list-style-type: none;
+        text-decoration: none;
+    }
+}
+
+.history {
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    background-image: url(../media/FONDO.jpg);
+    padding: 0 20px;
+
+    h2 {
+        font-size: $h-2;
+        color: rgb(227,94,4);
+        text-align: center;
+        font-family: fantasy;
+        font-size: $h-2;
+        letter-spacing: 2pt;
+        margin: 10px;
+    }
+
+    p {
+        font-size: 22px;
+    }
+}
+
+.beneficios {
+    display: flex;
+
+    flex-direction: column;
+    background-image: url(../media/FONDO.jpg);
+    padding: 0 20px;
+
+    h3 {
+        color: rgb(227,94,4);
+        text-align: center;
+        font-family: fantasy;
+        font-size: $h-2;
+        letter-spacing: 2pt;
+        margin: 2%;
+    }
+
+    ul {
+        font-size: 20px;
+        font-family: 'Times New Roman', Times, serif;
+        padding: 2%;
+    }
+
+}
+
+.modelos {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(1, 50%);
+    grid-template-rows: auto;
+    max-width: $anchomax;
+    padding: 2%;
+    text-align: left;
+    gap: 10px;
+
+    h4 {
+        color: rgb(227,94,4);
+        text-align: center;
+        font-size: $h-4;
+    }
+
+    p {
+        color: rgb(0, 0, 0);
+        text-align: center;
+        font-size: $h-1 / 2;
+
+    }
+}
+
+.modelomat {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(1, 50%);
+    grid-template-rows: auto;
+    max-width: 105%;
+    padding: 2%;
+    text-align: left;
+    gap: 10px;
+
+    h4 {
+        color: rgba(5, 5, 5, 0.993);
+        text-align: center;
+        padding: 3%;
+        font-size: $h-1 / 2;
+    }
+
+    p {
+        color: rgb(255, 255, 255);
+        text-align: center;
+        font-size: 25px;
+
+    }
+}
+
+.titulomodels {
+    font-size: 45px;
+    color: rgb(227,94,4);
+    font-family: fantasy;
+    font-size: $h-2;
+    letter-spacing: 2pt;
+    margin: 10px;
+    text-align: center
+}
+
+.titulos {
+    font-size: 45px;
+    color: rgb(227,94,4);
+    font-family: fantasy;
+    font-size: 37px;
+    letter-spacing: 2pt;
+    margin: 10px;
+    text-align: center;
+}
+
+.subtit {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    justify-content: center;
+    font-size: 25px;
+}
+
+label {
+    display: block;
+    margin-bottom: 2px;
+    padding: 1%;
+    font-weight: bold;
+}
+
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 95%;
+    margin: 1%;
+    background: linear-gradient(90);
+    background: rgb(227,94,4);
+    background: linear-gradient(90deg, rgba(227,94,4,1) 28%, rgba(239,89,0,1) 78%);
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input[type="submit"],
+input[type="button"] {
+    padding: 10px 20px;
+    margin: 20px;
+    background-color: #4CAF50;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover,
+input[type="button"]:hover {
+    background-color: #45a049;
+}
+
+#checkbox-menu,
+label.menu {
+    display: none;
+    font-size: 30px;
+    color: white;
+}
+
+.piedepag {
+    text-align: center;
+    background: rgb(252, 98, 6);
+    background: linear-gradient(90deg, rgba(252, 98, 6, 1) 22%, rgba(255, 241, 0, 0.9126081707096901) 86%);
+    color: white;
+    font-family: fantasy;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+
+    span {
+        padding: 10px;
+
+    }
+
+    .icon {
+        width: 20px;
+        height: 20px;
+    }
+
+}
+
+@import "queries"

@@ -1,0 +1,350 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Raleway";
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url(../fonts/static/Raleway-Medium.ttf);
+}
+
+h1 {
+    color: rgba(201, 105, 9, 0.993);
+    font-size: 50px;
+    font-family: fantasy;
+    text-align: center;
+    letter-spacing: 2pt;
+    margin: 13px;
+
+}
+
+h2 {
+    color: rgba(201, 105, 9, 0.993);
+    text-align: center;
+    font-family: fantasy;
+    font-size: 40px;
+    letter-spacing: 2pt;
+    margin: 10px;
+
+}
+
+h3 {
+    color: rgba(201, 105, 9, 0.993);
+    text-align: center;
+    font-family: fantasy;
+    font-size: 30px;
+    letter-spacing: 2pt;
+    margin: 10px;
+
+}
+
+/* h4 {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: fantasy;
+    font-size: 35px;
+    letter-spacing: 4pt;
+    margin: 10px;
+
+} */
+
+/* ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+} */
+
+/* a {
+    text-decoration: none;
+
+} */
+
+
+header {
+    background-image: url(../media/Living4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 25%;
+    font-size: 25px;
+
+}
+
+/* BARRA NAVEGACION */
+nav.navbar {
+    background-color: rgba(0, 0, 0, 0.786);
+    position: sticky;
+    top: 0;
+
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.navbar ul li {
+    color: rgb(41, 33, 33);
+    text-decoration-line: none;
+    display: inline-block;
+    padding: 20px;
+    margin: 5px;
+    list-style: none;
+    background-color: rgba(201, 105, 9, 0.993);
+    justify-content: space-evenly
+}
+
+.navbar ul li a {
+    color: rgb(255, 255, 255);
+}
+
+/* CHECK-MENU */
+
+#checkbox-menu, label.menu {
+    /* display: none; */
+    color:white;
+}
+.history {
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    background-image: url(../media/FONDO.jpg);
+    padding: 0 20px;
+
+}
+
+.history h2,
+.beneficios h3 {
+    font-size: 37px;
+}
+
+.history p,
+.beneficios li {
+    font-size: 18px;
+}
+
+.beneficios {
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    background-image: url(../media/FONDO.jpg);
+    padding: 0 20px;
+}
+
+/* FIN BARRA NAVEGACION */
+.modelos {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(1, 50%);
+    grid-template-rows: auto;
+    max-width: 105%;
+    padding: 2%;
+    background-image: url(/media/FONDO.jpg);
+    text-align: left;
+    gap: 10px;
+}
+.modelomat {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(1, 50%);
+    grid-template-rows: auto;
+    max-width: 105%;
+    padding: 2%;
+    background-color: rgba(0, 0, 0, 0.786);
+    text-align: left;
+    gap: 10px;
+}
+
+.titulomodels {
+    font-size: 45px;
+    text-align: center
+}
+
+.modelos h4 {
+    color: rgba(201, 105, 9, 0.993);
+    text-align: center;
+    font-size: 30px;
+}
+
+.modelos p {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 25px;
+
+}
+.modelomat h4 {
+    color: rgba(255, 255, 255, 0.993);
+    text-align: center;
+    padding: 3%;
+    font-size: 25px;
+}
+
+.modelomat p {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 25px;
+
+}
+
+#checkbox-menu,
+label.menu {
+    display: none;
+    font-size: 30px;
+    color: white;
+}
+
+/* SECCION INFO */
+
+
+/* .box {
+    width: 49%;
+    height: 380px;
+    font-size: 18px;
+    box-sizing: border-box;
+    background-color: white;
+    color: black;
+    border: 50px;
+    padding: 50px;
+    overflow: auto;
+    box-sizing: border-box;
+    text-align: left;
+    justify-content: center;
+    display: inline-block;
+    flex-direction: column;
+
+} */
+
+.piedepag {
+    text-align: center;
+    background-color: rgba(201, 105, 9, 1);
+    color: white;
+    font-family: fantasy;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+
+}
+
+.piedepag span {
+    padding: 10px;
+
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+}
+
+/* .contenedor-padre { */
+/* background-color: orange;
+    height: 650px;
+    width: 100%;
+    padding: 2% 2%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 50px; */
+/* } */
+
+/* .contenedor-hijo { */
+/* font-weight: 100px;
+    height: 250px;
+    width: 300px;
+    background-color: white; */
+
+/* } */
+.tela {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2%;
+    font-size: 2px;
+}
+
+/* ESTILO PARA MÓVILES (415px) */
+
+@media screen and (max-width: 600px) {
+    
+    h1 {
+        font-size: 20px;
+    }
+
+    .navbar ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+    }
+
+    label.menu {
+        display: block;
+        font-size: 25px;
+        color: white;
+    }
+
+    #checkbox-menu {
+        display: none;
+    }
+
+    #checkbox-menu:checked ~ .navbar ul {
+        display: block;
+    }
+}
+
+
+/* ESTILO PARA TABLETS (768px) */
+/* @media screen and (min-width: 360px) and (max-width: 768px) {
+    h1 {
+        font-size: 10px;
+    }
+} */
+
+/* Estilos para desktop */
+/* @media screen and (min-width: 769px) {
+    .container {
+        padding: 0;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .navbar ul {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar ul li {
+        margin-left: 15px;
+        opacity: 81%;
+        border-radius: 10%;
+    }
+
+    .navbar ul li a {
+        text-decoration: none;
+        color: #ffffff;
+    }
+
+    .imgbody {
+        display: flex;
+        justify-content: space-between;
+        background-image: url(/media/FONDO.jpg);
+        align-items: center;
+        padding: 30px;
+    }
+
+    .history,
+    .beneficios {
+        flex-basis: 50%;
+    }
+} */

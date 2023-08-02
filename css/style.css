@@ -5,26 +5,42 @@
   font-family: "Raleway";
 }
 
+@font-face {
+  font-family: LibreBaskerville;
+  src: url(../fonts/LibreBaskerville-Regular.ttf);
+}
 header {
   background-image: url(../media/Living4.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 25%;
+  padding: 19%;
   font-size: 25px;
 }
 
 header h1 {
-  color: rgb(227, 94, 4);
   font-size: 50px;
-  font-family: fantasy;
   text-align: center;
   letter-spacing: 2pt;
   margin: 13px;
 }
 
+header a {
+  list-style: none;
+  text-decoration-line: none;
+  font-family: LibreBaskerville;
+  src: url(../fonts/LibreBaskerville-Bold.ttf);
+  color: rgb(55, 55, 55);
+}
+
+h1 a:hover {
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  transition: 3s;
+}
+
 nav.navbar {
-  background-color: rgba(0, 0, 0, 0.786);
+  background-color: rgba(0, 0, 0, 0.705);
   position: sticky;
   top: 0;
 }
@@ -35,87 +51,89 @@ nav.navbar div {
   transition: all 2s;
 }
 
-nav.navbar div:hover {
-  height: 200px;
-  width: 200px;
-  padding: 20px;
-  background-color: cyan;
-}
-
 nav.navbar ul {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 nav.navbar ul li {
-  color: rgb(41, 33, 33);
+  color: rgb(33, 33, 33);
   text-decoration-line: none;
   display: inline-block;
   padding: 20px;
   height: 1%;
   margin: 5px;
-  border-radius: 15%;
   list-style: none;
-  background: rgb(227, 94, 4);
-  background: linear-gradient(90deg, rgb(227, 94, 4) 28%, rgb(239, 89, 0) 78%);
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
 nav.navbar ul li a {
   color: rgb(255, 255, 255);
+  font-size: 18px;
   list-style-type: none;
   text-decoration: none;
 }
 
+.navbar a:hover {
+  font-weight: bold;
+}
+
 .history {
   display: flex;
-  background-color: white;
   flex-direction: column;
-  background-image: url(../media/FONDO.jpg);
-  padding: 0 20px;
+  background: rgb(188, 186, 186);
+  background: linear-gradient(90deg, rgb(188, 186, 186) 0%, rgb(200, 198, 198) 100%, rgb(238, 238, 238) 100%);
+  padding: 30px;
 }
 
 .history h2 {
-  font-size: 37px;
-  color: rgb(227, 94, 4);
   text-align: center;
-  font-family: fantasy;
-  font-size: 37px;
+  color: rgb(55, 55, 55);
+  font-family: LibreBaskerville;
+  src: url(../fonts/LibreBaskerville-Regular.ttf);
+  font-size: 35px;
   letter-spacing: 2pt;
-  margin: 10px;
+  margin: 15px;
 }
 
 .history p {
-  font-size: 22px;
+  font-size: 20px;
+  font-family: LibreBaskerville;
+  src: url(../fonts/LibreBaskerville-Italic.ttf);
 }
 
 .beneficios {
   display: flex;
   flex-direction: column;
-  background-image: url(../media/FONDO.jpg);
-  padding: 0 20px;
+  background: rgb(188, 186, 186);
+  background: linear-gradient(90deg, rgb(188, 186, 186) 0%, rgb(200, 198, 198) 100%, rgb(238, 238, 238) 100%);
+  padding: 30px;
 }
 
 .beneficios h3 {
-  color: rgb(227, 94, 4);
+  color: rgb(48, 48, 48);
   text-align: center;
-  font-family: fantasy;
-  font-size: 37px;
+  font-family: LibreBaskerville;
+  src: url(../fonts/LibreBaskerville-Regular.ttf);
+  font-size: 35px;
   letter-spacing: 2pt;
   margin: 2%;
 }
 
-.beneficios ul {
+.beneficios ul li {
   font-size: 20px;
-  font-family: "Times New Roman", Times, serif;
-  padding: 2%;
+  padding: 1%;
+  font-family: LibreBaskerville;
+  src: url(../fonts/LibreBaskerville-Italic.ttf);
 }
 
 .modelos {
   display: grid;
   justify-content: center;
   grid-template-columns: repeat(1, 50%);
+  background: rgb(188, 186, 186);
+  background: linear-gradient(90deg, rgb(188, 186, 186) 0%, rgb(200, 198, 198) 100%, rgb(238, 238, 238) 100%);
   grid-template-rows: auto;
   max-width: 105%;
   padding: 2%;
@@ -123,8 +141,19 @@ nav.navbar ul li a {
   gap: 10px;
 }
 
+.modelos h2 {
+  text-align: center;
+  color: rgb(55, 55, 55);
+  font-family: LibreBaskerville;
+  src: url(../fonts/LibreBaskerville-Regular.ttf);
+  font-size: 35px;
+  font-weight: bold;
+  letter-spacing: 2pt;
+  margin: 40px;
+}
+
 .modelos h4 {
-  color: rgb(227, 94, 4);
+  color: rgb(48, 48, 48);
   text-align: center;
   font-size: 30px;
 }
@@ -139,6 +168,7 @@ nav.navbar ul li a {
   display: grid;
   justify-content: center;
   grid-template-columns: repeat(1, 50%);
+  background-image: url(../media/FONDO.jpg);
   grid-template-rows: auto;
   max-width: 105%;
   padding: 2%;
@@ -151,31 +181,32 @@ nav.navbar ul li a {
   text-align: center;
   padding: 3%;
   font-size: 25px;
+  font-weight: bold;
 }
 
 .modelomat p {
   color: rgb(255, 255, 255);
   text-align: center;
-  font-size: 25px;
+  font-size: 27px;
 }
 
 .titulomodels {
-  font-size: 45px;
-  color: rgb(227, 94, 4);
+  font-size: 450px;
   font-family: fantasy;
-  font-size: 37px;
+  font-size: 35px;
   letter-spacing: 2pt;
   margin: 10px;
   text-align: center;
 }
 
 .titulos {
-  font-size: 45px;
-  color: rgb(227, 94, 4);
-  font-family: fantasy;
-  font-size: 37px;
+  font-size: 50px;
+  color: rgb(48, 48, 48);
+  font-family: LibreBaskerville;
+  src: url(../fonts/LibreBaskerville-Regular.ttf);
+  font-size: 35px;
   letter-spacing: 2pt;
-  margin: 10px;
+  margin: 15px;
   text-align: center;
 }
 
@@ -183,11 +214,12 @@ nav.navbar ul li a {
   color: rgb(0, 0, 0);
   text-align: center;
   justify-content: center;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 label {
   display: block;
+  justify-content: center;
   margin-bottom: 2px;
   padding: 1%;
   font-weight: bold;
@@ -196,14 +228,13 @@ label {
 input[type=email],
 input[type=tel],
 textarea {
-  width: 95%;
+  width: 50%;
   margin: 1%;
-  background: linear-gradient(90);
-  background: rgb(227, 94, 4);
-  background: linear-gradient(90deg, rgb(227, 94, 4) 28%, rgb(239, 89, 0) 78%);
+  background-color: rgba(0, 0, 0, 0.3490196078);
   color: rgb(255, 255, 255);
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.705);
+  font-size: 15px;
   border-radius: 4px;
   margin-bottom: 15px;
 }
@@ -216,16 +247,21 @@ input[type=submit],
 input[type=button] {
   padding: 10px 20px;
   margin: 20px;
-  background-color: #4CAF50;
-  color: #ffffff;
+  background-color: #c98c07;
+  color: rgb(255, 255, 255);
   border: none;
   border-radius: 4px;
   cursor: pointer;
 }
 
-input[type=submit]:hover,
-input[type=button]:hover {
-  background-color: #45a049;
+input:hover {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+input:hover {
+  font-weight: bold;
+  font-size: 18px;
 }
 
 #checkbox-menu,
@@ -237,14 +273,16 @@ label.menu {
 
 .piedepag {
   text-align: center;
-  background: rgb(252, 98, 6);
-  background: linear-gradient(90deg, rgb(252, 98, 6) 22%, rgba(255, 241, 0, 0.9126081707) 86%);
-  color: white;
+  font-size: 25px;
+  background-color: rgba(0, 0, 0, 0.705);
+  color: rgb(255, 255, 255);
+  list-style-type: none;
+  text-decoration: none;
   font-family: fantasy;
   display: flex;
   flex-direction: column;
-  text-align: center;
-  padding: 10px;
+  text-align: left;
+  padding: 2%;
 }
 
 .piedepag span {
@@ -254,6 +292,40 @@ label.menu {
 .piedepag .icon {
   width: 20px;
   height: 20px;
+}
+
+.whatsapp-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+}
+
+a:hover {
+  font-weight: bold;
+}
+
+.instagram-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.email-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+.map {
+  justify-content: right;
+  display: inline;
 }
 
 @media screen and (max-width: 600px) {

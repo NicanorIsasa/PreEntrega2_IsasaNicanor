@@ -3,116 +3,143 @@ $fontsizeMediana:50px;
 $anchomax:105%;
 $anchomin:50;
 $h-1:50px;
-$h-2:37px;
-$h-3:37px;
+$h-2:35px;
+$h-3:35px;
 $h-4:30px;
+$h-5:27px;
+$h-6:20px;
+
 $naranja:rgba(201, 105, 9, 0.993);
-$negro: rgba(0, 0, 0, 0.786);
+$negro: rgba(0, 0, 0, 0.705);
 $blanco: rgb(255, 255, 255);
+$gris:rgb(48, 48, 48);
+
 
 @import "reset";
+
+@font-face {
+    font-family: LibreBaskerville;
+    src: url(../fonts/LibreBaskerville-Regular.ttf);
+}
 
 header {
     background-image: url(../media/Living4.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 25%;
+    padding: 19%;
     font-size: 25px;
 
     h1 {
-        color: rgb(227,94,4);
         font-size: $fontsizeMediana;
-        font-family: fantasy;
         text-align: center;
         letter-spacing: 2pt;
         margin: 13px;
     }
 
+    a {
+        list-style: none;
+        text-decoration-line: none;
+        font-family: LibreBaskerville;
+        src: url(../fonts/LibreBaskerville-Bold.ttf);
+        color: rgb(55, 55, 55);
+    }
+}
+
+h1 a:hover {
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    transition: 3s;
 }
 
 nav.navbar {
     background-color: $negro;
     position: sticky;
     top: 0;
-div {
-   width: 100px; height: 100px;
-   transition: all 2s;       
-}
-div:hover {
-   height: 200px; width: 200px;
-   padding: 20px;
-   background-color: cyan;
-}
+
+    div {
+        width: 100px;
+        height: 100px;
+        transition: all 2s;
+    }
 
     ul {
         display: flex;
         align-items: center;
-        justify-content: space-around;
+        justify-content: center;
     }
 
     ul li {
-        color: rgb(41, 33, 33);
+        color: rgb(33, 33, 33);
         text-decoration-line: none;
         display: inline-block;
         padding: 20px;
         height: 1%;
         margin: 5px;
-        border-radius: 15%;
         list-style: none;
-        background: rgb(227,94,4);
-        background: linear-gradient(90deg, rgba(227,94,4,1) 28%, rgba(239,89,0,1) 78%);        justify-content: space-evenly
+        justify-content: center;
     }
 
     ul li a {
         color: $blanco;
+        font-size: 18px;
         list-style-type: none;
         text-decoration: none;
     }
+
 }
+
+.navbar a:hover {
+    font-weight: bold;
+}
+
 
 .history {
     display: flex;
-    background-color: white;
     flex-direction: column;
-    background-image: url(../media/FONDO.jpg);
-    padding: 0 20px;
+    background: rgb(188, 186, 186);
+    background: linear-gradient(90deg, rgba(188, 186, 186, 1) 0%, rgba(200, 198, 198, 1) 100%, rgba(238, 238, 238, 1) 100%);
+    padding: 30px;
 
     h2 {
-        font-size: $h-2;
-        color: rgb(227,94,4);
         text-align: center;
-        font-family: fantasy;
+        color: rgb(55, 55, 55);
+        font-family: LibreBaskerville;
+        src: url(../fonts/LibreBaskerville-Regular.ttf);
         font-size: $h-2;
         letter-spacing: 2pt;
-        margin: 10px;
+        margin: 15px;
     }
 
     p {
-        font-size: 22px;
+        font-size: 20px;
+        font-family: LibreBaskerville;
+        src: url(../fonts/LibreBaskerville-Italic.ttf);
     }
 }
 
 .beneficios {
     display: flex;
-
     flex-direction: column;
-    background-image: url(../media/FONDO.jpg);
-    padding: 0 20px;
+    background: rgb(188, 186, 186);
+    background: linear-gradient(90deg, rgba(188, 186, 186, 1) 0%, rgba(200, 198, 198, 1) 100%, rgba(238, 238, 238, 1) 100%);
+    padding: 30px;
 
     h3 {
-        color: rgb(227,94,4);
+        color: rgb(48, 48, 48);
         text-align: center;
-        font-family: fantasy;
+        font-family: LibreBaskerville;
+        src: url(../fonts/LibreBaskerville-Regular.ttf);
         font-size: $h-2;
         letter-spacing: 2pt;
         margin: 2%;
     }
 
-    ul {
-        font-size: 20px;
-        font-family: 'Times New Roman', Times, serif;
-        padding: 2%;
+    ul li {
+        font-size: $h-6;
+        padding: 1%;
+        font-family: LibreBaskerville;
+        src: url(../fonts/LibreBaskerville-Italic.ttf);
     }
 
 }
@@ -121,14 +148,28 @@ div:hover {
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(1, 50%);
+    background: rgb(188, 186, 186);
+    background: linear-gradient(90deg, rgba(188, 186, 186, 1) 0%, rgba(200, 198, 198, 1) 100%, rgba(238, 238, 238, 1) 100%);
     grid-template-rows: auto;
     max-width: $anchomax;
     padding: 2%;
     text-align: left;
     gap: 10px;
 
+    h2 {
+        text-align: center;
+        color: rgb(55, 55, 55);
+        font-family: LibreBaskerville;
+        src: url(../fonts/LibreBaskerville-Regular.ttf);
+        font-size: $h-2;
+        font-weight: bold;
+        letter-spacing: 2pt;
+        margin: 40px;
+
+    }
+
     h4 {
-        color: rgb(227,94,4);
+        color: $gris;
         text-align: center;
         font-size: $h-4;
     }
@@ -145,6 +186,7 @@ div:hover {
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(1, 50%);
+    background-image: url(../media/FONDO.jpg);
     grid-template-rows: auto;
     max-width: 105%;
     padding: 2%;
@@ -156,19 +198,20 @@ div:hover {
         text-align: center;
         padding: 3%;
         font-size: $h-1 / 2;
+        font-weight: bold;
     }
 
     p {
         color: rgb(255, 255, 255);
         text-align: center;
-        font-size: 25px;
+        font-size: $h-5;
 
     }
+
 }
 
 .titulomodels {
-    font-size: 45px;
-    color: rgb(227,94,4);
+    font-size: 450px;
     font-family: fantasy;
     font-size: $h-2;
     letter-spacing: 2pt;
@@ -177,12 +220,13 @@ div:hover {
 }
 
 .titulos {
-    font-size: 45px;
-    color: rgb(227,94,4);
-    font-family: fantasy;
-    font-size: 37px;
+    font-size: $h-1;
+    color: $gris;
+    font-family: LibreBaskerville;
+    src: url(../fonts/LibreBaskerville-Regular.ttf);
+    font-size: $h-2;
     letter-spacing: 2pt;
-    margin: 10px;
+    margin: 15px;
     text-align: center;
 }
 
@@ -190,11 +234,12 @@ div:hover {
     color: rgb(0, 0, 0);
     text-align: center;
     justify-content: center;
-    font-size: 25px;
+    font-size: $h-6;
 }
 
 label {
     display: block;
+    justify-content: center;
     margin-bottom: 2px;
     padding: 1%;
     font-weight: bold;
@@ -203,14 +248,13 @@ label {
 input[type="email"],
 input[type="tel"],
 textarea {
-    width: 95%;
+    width: 50%;
     margin: 1%;
-    background: linear-gradient(90);
-    background: rgb(227,94,4);
-    background: linear-gradient(90deg, rgba(227,94,4,1) 28%, rgba(239,89,0,1) 78%);
-    color: rgb(255, 255, 255);
+    background-color: #00000059;
+    color: $blanco;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid $negro;
+    font-size: 15px;
     border-radius: 4px;
     margin-bottom: 15px;
 }
@@ -223,17 +267,24 @@ input[type="submit"],
 input[type="button"] {
     padding: 10px 20px;
     margin: 20px;
-    background-color: #4CAF50;
-    color: #ffffff;
+    background-color: #c98c07;
+    color: $blanco;
     border: none;
     border-radius: 4px;
     cursor: pointer;
 }
 
-input[type="submit"]:hover,
-input[type="button"]:hover {
-    background-color: #45a049;
+input:hover {
+    font-weight: bold;
+    font-size: 18px;
+
 }
+
+input:hover {
+    font-weight: bold;
+    font-size: 18px;
+}
+
 
 #checkbox-menu,
 label.menu {
@@ -244,14 +295,16 @@ label.menu {
 
 .piedepag {
     text-align: center;
-    background: rgb(252, 98, 6);
-    background: linear-gradient(90deg, rgba(252, 98, 6, 1) 22%, rgba(255, 241, 0, 0.9126081707096901) 86%);
-    color: white;
+    font-size: $h-1 / 2;
+    background-color: $negro;
+    color: $blanco;
+    list-style-type: none;
+    text-decoration: none;
     font-family: fantasy;
     display: flex;
     flex-direction: column;
-    text-align: center;
-    padding: 10px;
+    text-align: left;
+    padding: 2%;
 
     span {
         padding: 10px;
@@ -263,6 +316,41 @@ label.menu {
         height: 20px;
     }
 
+}
+
+
+.whatsapp-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: $blanco;
+    font-size: $h-6;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+.instagram-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    color: $blanco;
+    text-decoration: none;
+    font-size: $h-6;
+}
+
+.email-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    color: $blanco;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: $h-6;
+}
+
+.map {
+    justify-content: right;
+    display: inline;
 }
 
 @import "queries"

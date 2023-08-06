@@ -95,6 +95,17 @@ nav.navbar ul li a {
   src: url(../fonts/LibreBaskerville-Italic.ttf);
 }
 
+#checkbox-menu,
+label.menu {
+  display: none;
+}
+
+label.menu {
+  color: rgb(48, 48, 48);
+  cursor: pointer;
+  padding-left: 1%;
+}
+
 .beneficios {
   display: flex;
   flex-direction: column;
@@ -249,16 +260,15 @@ input:hover {
   font-size: 18px;
 }
 
-#checkbox-menu,
 label.menu {
-  display: none;
-  font-size: 30px;
-  color: white;
+  color: rgba(201, 105, 9, 0.993);
+  cursor: pointer;
+  padding-left: 1%;
 }
 
 .piedepag {
   text-align: center;
-  font-size: 25px;
+  font-size: 35px;
   background-color: rgba(0, 0, 0, 0.705);
   color: rgb(255, 255, 255);
   list-style-type: none;
@@ -282,7 +292,7 @@ label.menu {
   padding: 10px 20px;
   text-decoration: none;
   color: rgb(255, 255, 255);
-  font-size: 20px;
+  font-size: 30px;
 }
 
 a:hover {
@@ -294,7 +304,7 @@ a:hover {
   padding: 10px 20px;
   color: rgb(255, 255, 255);
   text-decoration: none;
-  font-size: 20px;
+  font-size: 30px;
 }
 
 .email-btn {
@@ -303,82 +313,10 @@ a:hover {
   color: rgb(255, 255, 255);
   text-decoration: none;
   border-radius: 5px;
-  font-size: 20px;
+  font-size: 30px;
 }
 
 .map {
   justify-content: right;
   display: inline;
 }
-
-@media screen and (max-width: 600px) {
-  h1 {
-    font-size: 20px;
-  }
-  .navbar ul {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-  }
-  label.menu {
-    display: block;
-    font-size: 25px;
-    color: white;
-  }
-  #checkbox-menu {
-    display: none;
-  }
-  #checkbox-menu:checked ~ .navbar ul {
-    display: block;
-  }
-}
-/* ESTILO PARA TABLETS (768px) */
-/* @media screen and (min-width: 360px) and (max-width: 768px) {
-    h1 {
-        font-size: 10px;
-    }
-} */
-/* Estilos para desktop */
-/* @media screen and (min-width: 769px) {
-    .container {
-        padding: 0;
-    }
-
-    .navbar {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 10px;
-    }
-
-    .navbar ul {
-        display: flex;
-        list-style: none;
-        margin: 0;
-        padding: 0;
-    }
-
-    .navbar ul li {
-        margin-left: 15px;
-        opacity: 81%;
-        border-radius: 10%;
-    }
-
-    .navbar ul li a {
-        text-decoration: none;
-        color: #ffffff;
-    }
-
-    .imgbody {
-        display: flex;
-        justify-content: space-between;
-        background-image: url(/media/FONDO.jpg);
-        align-items: center;
-        padding: 30px;
-    }
-
-    .history,
-    .beneficios {
-        flex-basis: 50%;
-    }
-} *//*# sourceMappingURL=style.css.map */

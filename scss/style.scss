@@ -92,6 +92,30 @@ nav.navbar {
 .navbar a:hover {
     font-weight: bold;
 }
+@media screen and (max-width: 360px){
+    .navbar ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        background-color: #333;
+        padding: 10px;
+        top: 50px;
+        left: 0;
+        width: 100%;
+    }
+  
+    .menu {
+        display: flex;
+        color: white;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+  
+    #checkbox-menu:checked ~ .navbar ul {
+        display: block;
+    }
+  }
+  
 
 
 .history {
@@ -118,6 +142,16 @@ nav.navbar {
     }
 }
 
+#checkbox-menu,
+label.menu {
+    display: none;
+}
+
+label.menu {
+    color: $gris;
+    cursor: pointer;
+    padding-left: 1%;
+}
 .beneficios {
     display: flex;
     flex-direction: column;
@@ -186,7 +220,7 @@ nav.navbar {
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(1, 50%);
-    background-image: url(../media/FONDO.jpg);
+    background-image: url(../media/fondo.jpg);
     grid-template-rows: auto;
     max-width: 105%;
     padding: 2%;
@@ -284,15 +318,11 @@ input:hover {
     font-weight: bold;
     font-size: 18px;
 }
-
-
-#checkbox-menu,
 label.menu {
-    display: none;
-    font-size: 30px;
-    color: white;
+    color: $naranja;
+    cursor: pointer;
+    padding-left: 1%;
 }
-
 .piedepag {
     text-align: center;
     font-size: $h-1 / 2;
@@ -353,4 +383,4 @@ a:hover {
     display: inline;
 }
 
-@import "queries"
+@import "_queries"
